@@ -1,0 +1,30 @@
+# Priora - Enterprise Task Priority System TODO
+
+- [x] Phase 1: Environment & Boilerplate Setup (Spring Boot 3 + Spring Security + Oracle JDBC `ojdbc11`)
+- [x] Phase 2: Domain Model & Spring Security Config (`SecurityFilterChain`, UserDetails, PasswordEncoder)
+- [x] Phase 3: Dynamic Score Calculation Service & Secured REST Controllers (`/api/tasks`)
+- [x] Phase 4: Angular 16 Standalone App Setup with Tailwind CSS & Auth Login/Role Context Header
+- [x] Phase 5: 3-Zone Canvas Component (Focus, Drifting, Orbit) using Angular Signals
+- [x] Phase 6: Angular UI Guards & Permission Checks (Disable Manager-only buttons for Team Members)
+- [x] Phase 7: Seed Data Creation (`schema.sql` / `data.sql`) & End-to-End Test Verification
+- [x] Phase 8: Corporate Minimalistic Light Mode UI Redesign (Clean Whitespace, Crisp Typography, Executive Dashboard Palette)
+- [x] Phase 9: Dependency Checkbox Selection UI & Explicit Login/Logout Modal Authentication
+- [x] Phase 10: Spring Boot 3.2.3 Preserved & Customizable Score Settings Entity/Service
+- [x] Phase 11: Developer Task Creation & Approval Workflow (Backend Approval Status & Policy)
+- [x] Phase 12: Angular Routing & Dedicated Full-Page Routes (`/login`, `/canvas`, `/approvals`, `/settings`)
+- [x] Phase 13: Manager Approvals Queue Page & Formula Customization UI
+- [x] Phase 14: End-to-End Testing & Verification
+- [x] Phase 15: Uniform Zone Card Template, Emoji Removal, Rejection Reason Comment & Detailed System Flow Documentation
+- [x] Phase 16: Admin User Management, User Profile Page, Employee Details & Change Password Feature
+- [x] Phase 17: Ordered Parent Dependency Execution Selection, Manager Custom Factor in Formula & Removal of Login Prefills
+- [x] Phase 18: Per-Task Custom Factor Selection in Create Task Modal & Formula Integration
+- [x] Phase 19: Manager-Only Task Creation, Toggle Ping & Developer Notifications, Reassign/Deadline Modal Fixes, Developer-Only Assignees & Past Date Disabling, Custom Dependency Settings
+- [x] Phase 20: Manager-Only Ping Restriction (Developers Cannot Ping) & 100% Equal Card Size (Fixed 460px Height) across All Zones
+- [x] Phase 21: Admin User Provisioning Double-Validation (Frontend & Backend) with Department & Role "Other" Dropdown Inputs
+- [x] Phase 22: Direct Field-Level Validation Error Messages under Respective Inputs & Backend Error Field Mapping
+- [x] Phase 23: Strict Industry-Standard Double Validations (Title Case Full Name, Password Checklist, Fixed 'EMP-' Prefix Input, Username Rules)
+- [x] Phase 24: Production-Grade OWASP Validation Logic & JUnit 5 Automated Unit Tests (46 Tests Passed)
+- [x] Phase 25: Comprehensive Role Renaming (`Admin` -> `Project Manager`, `Manager` -> `Team Lead`) & Creation of New Role (`Tester` / `ROLE_TESTER`)
+- [x] Phase 26: Two-Phase Deadline Proximity Calculation & Overdue Penalty Refactoring (100.0 to 130.0 pts max, Capped Overdue Escalation)
+- [x] Phase 27: System-Wide Application Rebranding to **Priora** (Logo `P`, Executive Titles & Footers)
+- [x] Phase 28: Seed User Account Username Update Based on Full Names (`project.manager`, `alex.vance`, `devon.smith`, `alex.rivera`) & Login Interface Quick-Select Preset Buttons

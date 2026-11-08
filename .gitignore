@@ -1,0 +1,63 @@
+# ============================================================
+# Root .gitignore for Priora (Gravity Canvas)
+# ============================================================
+
+# ============================================================
+# SECURITY — Never commit credentials or secrets
+# ============================================================
+**/application-local.properties
+**/application-*.local.properties
+**/*-secret.properties
+**/*-credentials.properties
+**/.env
+**/.env.*
+!**/.env.example
+!**/application.properties.example
+
+# ============================================================
+# Java / Maven (Backend)
+# ============================================================
+target/
+*.class
+*.jar
+!**/.mvn/wrapper/*.jar
+*.war
+*.ear
+*.log
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ============================================================
+# Node / Angular (Frontend)
+# ============================================================
+node_modules/
+dist/
+.angular/cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.tsbuildinfo
+
+# ============================================================
+# IDE & Editor Files
+# ============================================================
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# OS Files
+# ============================================================
+.DS_Store
+Desktop.ini
+$RECYCLE.BIN/

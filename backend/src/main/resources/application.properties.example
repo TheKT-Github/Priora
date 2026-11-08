@@ -1,0 +1,51 @@
+# ===================================================================
+# Priora (Gravity Canvas) Spring Boot Configuration
+# ===================================================================
+# COPY THIS FILE TO application.properties AND FILL IN YOUR VALUES.
+# DO NOT commit application.properties to version control.
+# ===================================================================
+spring.application.name=gravity-canvas-backend
+
+# Server Port
+server.port=8081
+
+# -------------------------------------------------------------------
+# PostgreSQL DB Connection Configuration
+# -------------------------------------------------------------------
+spring.datasource.url=jdbc:postgresql://localhost:5432/YOUR_DATABASE_NAME
+spring.datasource.username=YOUR_POSTGRES_USERNAME
+spring.datasource.password=YOUR_POSTGRES_PASSWORD
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# -------------------------------------------------------------------
+# HikariCP Pool Configuration
+# -------------------------------------------------------------------
+spring.datasource.hikari.maximum-pool-size=10
+spring.datasource.hikari.minimum-idle=2
+spring.datasource.hikari.idle-timeout=600000
+spring.datasource.hikari.max-lifetime=1800000
+spring.datasource.hikari.keepalive-time=300000
+spring.datasource.hikari.connection-test-query=SELECT 1
+spring.datasource.hikari.validation-timeout=5000
+spring.datasource.hikari.pool-name=PrioraHikariPool
+
+# -------------------------------------------------------------------
+# JPA / Hibernate Properties (Automatic DDL - No schema.sql needed)
+# -------------------------------------------------------------------
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+# -------------------------------------------------------------------
+# Database Initialization (Disabled - DataInitializer handles seeding)
+# -------------------------------------------------------------------
+spring.sql.init.mode=never
+spring.sql.init.continue-on-error=true
+spring.jpa.defer-datasource-initialization=true
+
+# -------------------------------------------------------------------
+# Logging Levels
+# -------------------------------------------------------------------
+logging.level.org.springframework.security=INFO
+logging.level.com.gravitycanvas=DEBUG
