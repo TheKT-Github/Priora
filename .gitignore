@@ -30,9 +30,9 @@ target/
 # ============================================================
 # Node / Angular (Frontend)
 # ============================================================
-node_modules/
-dist/
-.angular/cache/
+**/node_modules/
+**/dist/
+**/.angular/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
